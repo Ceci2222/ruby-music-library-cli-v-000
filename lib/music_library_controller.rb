@@ -25,12 +25,18 @@ class MusicLibraryController
         list_songs
       elsif user_input == "list artists"
         list_artists
+      elsif user_input == "list genres"
+        list_genres
+      elsif user_input == "list artist"
+        list_artist 
+      elsif user_input == "list genre"
+        list_genre 
+      elsif user_input == "play song"
+        play_song
       end
     end
-  
   end 
-    # 
-  
+
   
   def list_songs
     songs_sorted = Song.all.sort_by {|s| s.name}
