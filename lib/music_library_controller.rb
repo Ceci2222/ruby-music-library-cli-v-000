@@ -80,7 +80,7 @@ class MusicLibraryController
     # if input > 0 && input < 5
       # song = @song_sorted[index]
       # puts "Playing #{song.name} by #{song.artist}"
-    end
+    # end
   end
     
 end
