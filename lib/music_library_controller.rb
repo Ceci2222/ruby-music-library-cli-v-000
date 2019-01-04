@@ -78,6 +78,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.to_i
     if input > 0 && input < 5
+      song = @song_sorted[index]
       puts "Playing #{song.name} by #{song.artist}"
     end
   end
