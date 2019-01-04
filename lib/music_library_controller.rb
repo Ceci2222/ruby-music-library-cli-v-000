@@ -79,7 +79,8 @@ class MusicLibraryController
     input = gets.to_i
     if input > 0 && input < Song.all.count
       index = input - 1
-      song = @songs_sorted[index]
+      songs = @songs_sorted
+      song = songs[index]
       binding.pry
       # puts "Playing #{song.name} by #{song.artist}"
     end
