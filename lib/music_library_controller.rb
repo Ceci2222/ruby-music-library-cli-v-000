@@ -21,7 +21,7 @@ class MusicLibraryController
       puts "What would you like to do?"
       input = gets.strip
     end
-   
+  end 
     # until input == "exit"
     #   input = gets.strip
     #   if input == "list songs"
@@ -31,7 +31,7 @@ class MusicLibraryController
     #   elsif input == "list genres"
     # end
     # end
-  end
+  
   
   def list_songs
     songs_sorted = Song.all.sort_by {|s| s.name}
